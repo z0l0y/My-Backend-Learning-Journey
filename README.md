@@ -22,14 +22,21 @@
 
 不过初学一门编程语言的时候可能你会遇到很多问题，比如思考为什么要写OOP，为什么要有多线程，很多东西你可能暂时不太了解，不过这没有关系，当你学到后面的时候自然会体会到这样做的原因
 
-这里介绍一下我们初学Java语言时的技巧
+这里介绍一下我初学Java语言时的技巧
 
 - 多敲代码(代码是手上功夫，光看不练假把式)
 - 学习 Debug (当你遇到问题无法得到你预期的结果时，可以试试断点调试)
 - 学习Stream流和Lambda 表达式(这两个技术可以使我们的程序更加优雅---优化数据处理和匿名函数的编写)
 - 看看阿里巴巴的开发规范(这样更有利于你的程序写出更少的Bug，可读性更好，可扩展性更高)
 
-### 数据库---MySQL(必学)
+推荐文档和工具:
+
+- [简介 - Java教程 - 廖雪峰的官方网站 (liaoxuefeng.com)](https://liaoxuefeng.com/books/java/introduction/index.html)
+- [Overview (Java Platform SE 8 ) (oracle.com)](https://docs.oracle.com/javase/8/docs/api/)
+- [Java 8 中文版 - 在线API手册 - 码工具 (matools.com)](https://www.matools.com/api/java8)
+- [akullpp/awesome-java: A curated list of awesome frameworks, libraries and software for the Java programming language. (github.com)](https://github.com/akullpp/awesome-java)
+
+### 关系型数据库---MySQL(必学)
 
 ------
 
@@ -41,6 +48,12 @@
 
 - SQL语句编写(主要会CURD就行了，create、update、read和delete)
 - 设计数据库表，字段(这里建议看看阿里巴巴对于数据库设计的规范，帮助你更好的设计数据库)
+
+推荐文档:
+
+- [MySQL :: MySQL Documentation](https://dev.mysql.com/doc/)
+- [MySQL 中文网](https://mysql.net.cn/)
+- [MySQL 中文文档 | MySQL 中文网 (mysqlzh.com)](https://www.mysqlzh.com/)
 
 ### ORM框架---Mybatis / Mybatis-plus(必学)
 
@@ -55,6 +68,11 @@
 
 这里简单说明一下，为什么这样搭配，因为在写复杂SQL的时候Mybatis-plus的wrapper会很复杂，可读性很低，我们写的时候犯错的几率也会更大，所以推荐这时使用Mybatis来写
 
+推荐文档:
+
+- [mybatis – MyBatis 3 | 简介](https://mybatis.org/mybatis-3/zh_CN/index.html)
+- [MyBatis-Plus 🚀 为简化开发而生 (baomidou.com)](https://baomidou.com/)
+
 ### 开发框架---Spring，SpringMVC，SpringBoot(必学)
 
 ------
@@ -62,6 +80,24 @@
 这是我们做Web服务时常用的框架，如果不想从麻烦的原生配置开始做起，建议直接学习SpringBoot2(SpringBoot3相对于SpringBoot2就是功能更多，但是API发生了较大的变化，可能你学习的时候大部分时间都用在处理冲突上了，所以建议新手入门直接学习SpringBoot2，等有了一定基础再学Spring家族的其他框架，做一般的项目SpringBoot也够用了)
 
 还有就是不要看Spring，SpringMVC，SpringBoot有三个，其实Spring + SpringMVC ≈ SpringBoot，所以你其实可以直接学习SpringBoot，但是可能对于一些在前者(Spring，SpringMVC)中约定俗称的配置有些迷惑，所以这边还是建议有时间的话先把Spring，SpringMVC学了再学SpringBoot
+
+推荐文档:
+
+- [Spring | Home](https://spring.io/)
+- [spring 中文文档 - spring 中文网 (springdoc.cn)](https://springdoc.cn/docs/)
+- [Spring 项目 :: Spring 框架 - Spring 中文 (springframework.org.cn)](https://docs.springframework.org.cn/spring-framework/reference/spring-projects.html)
+
+### 接口管理工具---Postman / Apifox / Swagger / YApi
+
+------
+
+什么，你还在使用HTTP client发送请求?
+
+那么不妨试一试我上面提到的工具吧，这些工具的界面更加友好，功能更加强大，我们没有理由不去使用它
+
+最开始我使用的是Postman，后面使用过Apifox，Swagger，YApi等工具，就我个人这么久的使用体验而言，感觉Apifox的功能更多更强大，界面是中文，而且还可以导出接口文档，很方便，不用我们自己去写
+
+这个就不用什么文档了，建议直接CSDN启动
 
 ### 安全管理框架---Spring Security / Shiro (选学，项目有安全需要的学)
 
@@ -77,6 +113,12 @@
 - 同时也建议你了解一下RACP理论，这个在Spring Security中也有体现
 - 还有就是建议你了解一下OAuth2协议
 
+推荐文档:
+
+- [Spring | Home](https://spring.io/)
+- [spring 中文文档 - spring 中文网 (springdoc.cn)](https://springdoc.cn/docs/)
+- [Spring 项目 :: Spring 框架 - Spring 中文 (springframework.org.cn)](https://docs.springframework.org.cn/spring-framework/reference/spring-projects.html)
+
 ### 依赖管理管理工具---Maven / Gradle(必学)
 
 ------
@@ -87,6 +129,13 @@
 
 - 当成工具用就行，重要性没有那些框架重要
 - 如果缺什么的工具包(比如处理JSON的)，建议在awesome-java中找找看有没有推荐的工具包，然后在Maven仓库中找到对应的依赖，得到对应的pom文件导入就行了
+
+推荐文档和仓库:
+
+- [Maven – Maven Documentation (apache.org)](https://maven.apache.org/guides/index.html)
+- [Maven Repository: Search/Browse/Explore (mvnrepository.com)](https://mvnrepository.com/)
+- [Maven Central (sonatype.com)](https://central.sonatype.com/?smo=true)
+- [Maven 中文网](https://maven.org.cn/)
 
 ### 版本控制工具---Git(必学)
 
@@ -103,6 +152,14 @@
 以及，我们主要要学习Git的哪些API呢？
 
 - 主要是学习提交、推送、拉取、回退、重置、克隆，代码合并、解决冲突的命令。后续根据对应项目场景的需求再对应去学即可。
+
+推荐文档和网站:
+
+- [Git - Book (git-scm.com)](https://git-scm.com/book/zh/v2)
+- [GitHub Docs](https://docs.github.com/zh)
+- [Simple Git tutorial for beginners | Nulab](https://nulab.com/zh-cn/learn/software-development/git-tutorial/)
+- [Learn Git Branching](https://learngitbranching.js.org/?locale=zh_CN)
+- [GitHub Git 备忘单 - GitHub Cheatsheets](https://training.github.com/downloads/zh_CN/github-git-cheat-sheet/)
 
 ### 服务器---Linux(必学)
 
@@ -130,7 +187,20 @@
 - 我目前主要通过VMware，VirtualBox和WSL2来使用，推荐使用Ubuntu，当然使用Centos学习也行
 - VMware是我一开始学习Linux的时候用的工具，其实也是挺好用的
 - VirtualBox可以结合Vagrant来使用，实现一键部署虚拟机，这个倒是挺方便的
+- 对了对了，如果你要使用虚拟机来进行学习的话，推荐你使用XShell或者FinalShell来作为SSH连接的工具，要不然你就只能使用黑黑的终端来连接了
 - WSL2可以直接在Windows上运行，不用每次学习都要开虚拟机，更加方便
+
+这个Linux上有很多好玩的东西，下面我来介绍一下:
+
+- 脚本控制项目部署和起起停停 --- Shell
+- 最流行的基于命令行的编辑器 --- Vim
+- 最常用的构建系统之一 --- make
+
+推荐网站:
+
+- [Linux命令搜索引擎 命令，Linux Linux命令搜索引擎 命令详解：最专业的Linux命令大全，内容包含Linux命令手册、详解、学习，值得收藏的Linux命令速查手册。 - Linux 命令搜索引擎 (wangchujiang.com)](https://wangchujiang.com/linux-command/)
+- [Linux命令大全(手册) – 真正好用的Linux命令在线查询网站 (linuxcool.com)](https://www.linuxcool.com/)
+- [清华大学开源软件镜像站 | Tsinghua Open Source Mirror](https://mirrors.tuna.tsinghua.edu.cn/)
 
 ### 前端基础---前端三剑客(必学)
 
@@ -150,28 +220,57 @@
 
 也许你已经写出过几千行的代码了，但是你或许会发现自己每改动一个位置的代码，很多位置都会发生变化，你常常因为这件事情焦头烂额，觉得工作量太大。其实大可不必，很多时候都是我们没有设计好类与类之间的关系，使得我们后期加需求，维护时的难度大大提升。
 
+简而言之，设计模式可以让你写出高质量的代码(Safe from bugs,Easy to understand,Ready for change)
+
 设计模式简单的说有三个模式：创建型模式，结构型模式，行为型模式。当然，你肯定不想让我在这里介绍一些枯燥的知识，所以我这里直接说说我对设计模式的看法：
 
 - 设计模式不应该一开始就强行运用上。也许你会疑惑，刚才不是说了设计模式很好很好云云之类的，为什么这里又不推荐用呢？其实是因为我们项目最开始的时候，需求并不清楚，代码并不复杂，如果直接使用设计模式会使得代码可读性降低，而且不能有的放矢(不是所有的类都需要通过设计模式来设计)，只有当后期需求逐渐完整，类与类之间的关系变得逐渐复杂，你发现可以优化的时候再推荐使用
 - 最开始的时候不要为了使用设计模式而使用设计模式。学习设计模式可以让我们在读对应优秀框架源码的时候游刃有余(比如Spring就是用了很多的设计模式，如果你不学，很可能看都看不懂这是在干什么)
 
+推荐资料(除了设计模式本身，也包含了其他让你写出高质量代码的资料):
+
+- [Explore, Learn, and Master Industry-Standard Patterns | Java Design Patterns (java-design-patterns.com)](https://java-design-patterns.com/)
+- [Readings | Software Construction | Electrical Engineering and Computer Science | MIT OpenCourseWare](https://ocw.mit.edu/courses/6-005-software-construction-spring-2016/pages/readings/)
+
 ### 缓存---Redis(必学)
 
 ------
 
-在你使用MySQL的时候不知道你有没有想到过，如果频繁的对于一些经常要访问的数据进行SQL查询是十分浪费性能的(因为数据库是从硬盘里面读取数据到内存中)，在业务处理中IO往往是导致处理请求慢的罪魁祸首，所以我们不妨使用一下缓存技术吧，将数据缓存到内存中，然后直接省去了从硬盘中读取这一步!
+在你使用MySQL的时候不知道你有没有想到过，如果频繁的对于一些经常要访问的数据进行SQL查询是十分浪费性能的(因为数据库是从硬盘里面读取数据到内存中)，在业务处理中IO往往是导致处理请求慢的罪魁祸首，所以我们不妨使用一下缓存技术吧，将数据缓存到内存中，然后直接省去了从硬盘中读取这一步!缓存经常访问的不易变化的数据对于提升系统性能有很大帮助。
 
 缓存其实和数据库类似，毕竟都是对数据进行存储的，所以一般而言，我们对其的操作也不会超过增删改查，但是与关系型数据库不同的是，缓存常常和业务是强耦合的，你需要根据实际的情况判断哪些需要缓存，哪些不需要缓存(对于经常变化的数据，不建议缓存，对于不经常变化的数据，建议缓存)
+
+如果你学完之后意犹未尽，不妨看看Caffeine(这是一个很优秀的本地缓存框架)和多级缓存(可以使用Lua脚本在Nginx里构建缓存)
+
+推荐文档:
+
+- [Commands | Docs (redis.io)](https://redis.io/docs/latest/commands/)
+- [文档 - Redis 中文](http://redis.ac.cn/docs/latest/)
+- [redis中文文档](https://redis.com.cn/documentation.html)
+
+### 性能压测---JMeter(选学，想要测试一下自己程序性能的可以试试)
+
+------
+
+对了，看到这里你可能会问，为什么用了缓存之后，你就知道性能提升了啊?
+
+没错，我们接下来介绍一下JMeter
+
+JMeter就是用来做压测的，你可以多关注一下你加了缓存和没有加缓存的QPS分别是多少，这时你就会发现缓存的厉害之处了
+
+这个就不用专门去看文档学习了，它只是一个工具，具体的可以去CSDN上看看是怎么实现压测的
+
+当然，这里提一下，我们这个压测仅仅只是初略的估计，因为你电脑不可能只跑你的服务，可能会打开一些Edge浏览器窗口，可能会挂着QQ，它们都会占用你电脑的系统资源，同时，JMeter发送请求的时候也会占用你电脑的资源(毕竟是你电脑的一个进程)，所以我们这里只是大概看一下自己写的程序的性能罢了。要想真正的测试你程序的性能，建议你把你的服务放在一台远程服务器上跑，然后用本地电脑发送JMeter请求，这样测试的相较于上面的就更加精确了
 
 ### 消息队列---RabbitMQ(必学)
 
 ------
 
-消息是消息，队列是队列，两个合在一起就是消息队列(在队列里存放的不再是算法中的元素i,j了，而是一个一个的消息)
+消息是消息，队列是队列，两个合在一起就是消息队列(在队列里存放的是一个一个的消息对象)
 
 这项技术主要是用于异步消息，比如说调用一个服务的链路很长，就以订单服务来说，首先创建订单，扣减库存，扣减账户余额，创建完成订单，一下子就调用到了订单服务，库存服务，用户账户服务这三个服务，如果是依次调用的话那么用户可能买完东西后会等好一会才有反应，那么如果链路变的更长呢？
 
-所以我们急需一种技术可以实现传输和保存消息，将各个服务的请求交由消息队列去处理(这里再举一个小例子，快递员是直接上楼将快递给你快，还是统一将快递交由快递柜快，答案显而易见)，消息队列也是同样的设计思想，与其将消息传递给对接的服务，不如找一个代理的去存储消息
+所以我们急需一种技术可以实现传输和保存消息，将各个服务的请求交由消息队列去处理(这里再举一个小例子，快递员是直接上楼将快递给你快，还是统一将快递交由快递柜快，答案显而易见)，消息队列也是同样的设计思想，与其将消息传递给对接的服务，不如解耦，去找一个代理的去异步处理消息
 
 消息队列那么多，我该学习哪个呢？
 
@@ -181,6 +280,11 @@
 
 - 当你的调用链路过长的时候，你就可以考虑使用消息队列来处理你项目中遇到的问题了。
 
+推荐文档:
+
+- [RabbitMQ Documentation | RabbitMQ](https://www.rabbitmq.com/docs)
+- [RabbitMQ：一个经纪人来管理所有队列 | RabbitMQ 中文](https://rabbitmq.org.cn/)
+
 ### 反向代理服务器---Nginx(选学，一般只要了解一下怎么用即可)
 
 ------
@@ -189,7 +293,14 @@
 
 一般用于存储前端的静态资源，实现动静分离，屏蔽后面的服务器，实现反向代理
 
-如果你要学习Nginx的话，建议你了解一下OpenResty，相较于Nginx，OpenResty的功能更多，而且我们也更容易使用Lua脚本语言来改造，加上一些自己特制的功能
+如果你要学习Nginx的话，建议你了解一下OpenResty，相较于Nginx，OpenResty的功能更多，而且我们也更容易使用Lua脚本语言来改造，加上一些自己特制的功能，当然Tengine也不错
+
+推荐文档:
+
+- [nginx documentation](https://nginx.org/en/docs/)
+- [nginx 文档 - Nginx 中文 (nginxserver.cn)](https://nginxserver.cn/en/docs/)
+- [OpenResty® - 开源官方站](https://openresty.org/cn/)
+- [文档 - The Tengine Web Server (taobao.org)](https://tengine.taobao.org/documentation_cn.html)
 
 ### 网路编程---Netty(选学，除非你对于网络编程很感兴趣)
 
@@ -209,11 +320,11 @@
 
 那么，为什么会出现微服务呢？
 
-- 答案很简单，当你的项目不断的增加新的需求变的越来越大，越复杂时，总有一天会迎来被拆分的结局。就类似于大学物理，为了你更好理解，会将对应的章节拆分开，分成第几章第几章，不会说直接一大坨让你学。对于程序员也是一样，如果一个项目越来越庞大，那么为了使开发效率变高，必然会走向拆分的道路。
+- 答案很简单，当你的项目不断的增加新的需求变的越来越大，越复杂时，总有一天会迎来被拆分的结局。就类似于大学物理，为了你更好理解，会将对应的章节拆分开，分成第几章第几节，不会说直接一大坨没有目录没有拆分的让你学。对于程序员也是一样，如果一个项目越来越庞大，那么为了使开发效率变高，必然会将一个庞大的项目拆分成一个个功能独立的小模块。
 
 推荐学习的路线：
 
-- 先学习Dubbo，因为Dubbo对于底层的封装更少，可以使你快速的了解到RPC，然后再是Spring Cloud和Spring Cloud Alibaba，因为后两者对于底层的封装太完善了，如果直接学很有可能使你不知道一下子是怎么来的
+- 先学习Dubbo，因为Dubbo对于底层的封装更少，可以使你快速的了解到分布式，RPC，然后再是Spring Cloud和Spring Cloud Alibaba，因为后两者对于底层的封装太完善了，如果直接学很有可能使你不知道一下子是怎么来的
 
 组件那么多，我该先学哪些？
 
@@ -230,6 +341,12 @@ Docker主要做的是将你的项目和你项目所需的环境进行封装，�
 
 主要是多练练相关的命令，可以试着将自己的项目采用Docker的方式部署在虚拟机上试试，或者使用WSL2，这也是一个不错的选择
 
+推荐文档和仓库:
+
+- [Docker Docs](https://docs.docker.com/)
+- [Docker中文网 (github.net.cn)](https://docker.github.net.cn/)
+- [Docker Hub Container Image Library | App Containerization](https://hub.docker.com/)
+
 ### 容器编排---Kubernetes(选学，有自动化部署集成需求的学)
 
 ------
@@ -239,6 +356,11 @@ Docker主要做的是将你的项目和你项目所需的环境进行封装，�
 这里说说我一开始使用Kubernetes遇到的问题：
 
 - 不要直接在笔记本上部署完整的Kubkernetes集群，要不然你的电脑可能会承受不住直接死机，对于性能较弱的笔记本电脑来说，部署Minikube或K3s是一个更加明知的选择(比起Kubkernetes来说更加轻量)，毕竟我们只是想学习它，不是非要部署一个完整的才行
+
+推荐文档:
+
+- [Kubernetes 文档 | Kubernetes](https://kubernetes.io/zh-cn/docs/home/)
+- [Kubernetes (K8s) 中文](https://kubernetes.ac.cn/)
 
 ### CI / CD---Jenkins(选学，有自动化部署集成需求的学)
 
@@ -252,6 +374,10 @@ Docker主要做的是将你的项目和你项目所需的环境进行封装，�
 
 - 其实也没有多少，但是一定要注意Jenkins插件对于你下载Jenkins的版本是有要求的，为了较为快乐的学习这个工具，建议使用最新版的Jenkins来学习，至少你不会遇见一些因为插件版本不适配导致的奇怪Bug
 
+推荐文档:
+
+- [Jenkins 用户手册](https://www.jenkins.io/zh/doc/)
+
 ### 并发编程---JUC(必学)
 
 ------
@@ -259,6 +385,10 @@ Docker主要做的是将你的项目和你项目所需的环境进行封装，�
 都说Java百万并发，千万并发的，其实说的就是Java的JUC，JUC旨在教导你使用计算机有限的资源去应对更多的请求压力，看到这里相信你也明白了，这是属于程序优化的内容
 
 建议就是菜就多练，这部分是Java最难的部分之一，没有长时间的实践积累，学习原理，你是拿不下这块内容的
+
+推荐网站(建议自己找书看):
+
+- [Z-Library – 世界上最大的电子图书馆。自由访问知识和文化。 (singlelogin.re)](https://zh.singlelogin.re/)
 
 ### 虚拟机---JVM(必学)
 
@@ -268,6 +398,12 @@ Docker主要做的是将你的项目和你项目所需的环境进行封装，�
 
 这边建议结合视频和书(《深入理解Java虚拟机（第3版）》)一起看，毕竟这个东西比较枯燥，可能你会看不下去书，还有就是推荐使用Arthas这个工具来帮助我们学习
 
+推荐工具和文档(建议自己找书看):
+
+- [命令列表 | arthas (aliyun.com)](https://arthas.aliyun.com/doc/commands.html)
+- [java (oracle.com)](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/java.html)
+- [Z-Library – 世界上最大的电子图书馆。自由访问知识和文化。 (singlelogin.re)](https://zh.singlelogin.re/)
+
 ### 任务调度---XXL-JOB(选学，一般了解即可)
 
 ------
@@ -275,6 +411,10 @@ Docker主要做的是将你的项目和你项目所需的环境进行封装，�
 任务交由谁来执行呢，定时任务该怎么做，如果你有这样的需求，那么XXL-JOB一定对你的胃口
 
 个人感觉和RabbitMQ的功能比较类似，但是比起RabbitMQ，XXL-JOB在实际的项目使用中更加轻量化
+
+推荐文档:
+
+- [分布式任务调度平台XXL-JOB (xuxueli.com)](https://www.xuxueli.com/xxl-job/)
 
 ### 搜索引擎---Elasticsearch(选学，等你项目需要搜索功能的时候再学)
 
@@ -285,6 +425,10 @@ Docker主要做的是将你的项目和你项目所需的环境进行封装，�
 为要搜索的数据建立索引，主要用于快速搜索
 
 这个Elasticsearch是ELK的一部分，其中Kibana可以可视化你存在Elasticsearch中的数据，而且还提供了一个写DSL语句的页面，有点类似HTTP Client
+
+推荐文档:
+
+- [Documentation (elastic.co)](https://www.elastic.co/docs)
 
 ### 链路追踪---SkyWalking(选学，除非你的项目很大，链路层级很深)
 
@@ -298,9 +442,40 @@ Docker主要做的是将你的项目和你项目所需的环境进行封装，�
 
 ------
 
-可以帮助你实现读写分离，分库分表，一般在你一个数据库不够的情况下使用，否则不建议学习，建议有需要了再学习
+可以帮助你实现读写分离，分库分表，一般是在你一个数据库不够应对现有并发量的情况下使用，否则不建议学习，建议有需要了再学习
 
 这个建议直接看官方文档，主要是官方文档写的比较精炼，而且基本上照着文档上面说的配置一般都没有什么问题，不过要注意使用的数据库连接客户端的版本不能太低，要不然会产生不兼容的问题
 
 至于这两个我们到底要选择哪一个，我推荐学习使用ShardingSphere，因为它的社区更活跃，功能更多，比MyCat更加完善
 
+推荐文档:
+
+- [概览 :: ShardingSphere (apache.org)](https://shardingsphere.apache.org/document/current/cn/overview/)
+
+### 同步数据---Canal(选学，建议了解即可，毕竟我们也不是运维人员)
+
+------
+
+主要是为了解决主从数据库数据的同步问题，一般要用的话会配合MySQL使用
+
+### 存图片---OSS(选学，建议当你遇到存图片的需求的时候再去有针对性的学)
+
+------
+
+嗯，想想看，当你有了一个用户系统，然后每一个用户都会上传自己的头像，随着用户越来越多，你会发现这些图片好像浪费了你服务器的很多空间，那么你有没有考虑过将图片存储在其他人的服务器上以避免这种情况呢?
+
+如果你想优化一下，那么不妨试一试阿里云的OSS云存储吧，免费又实用
+
+推荐网站:
+
+- [阿里云-计算，为了无法计算的价值 (aliyun.com)](https://www.aliyun.com/)
+
+### 超好用的工具包---Hutool(必学)
+
+------
+
+你是不是在为有时候没有好用的工具而烦恼，又或者是自己写的小工具总是有Bug，那么不妨尝试一下这款工具包吧，里面包含了对文件、流、加密解密、转码、正则、线程、XML等JDK方法的封装，用起来既方便又安全
+
+推荐文档:
+
+- [Hutool🍬一个功能丰富且易用的Java工具库，涵盖了字符串、数字、集合、编码、日期、文件、IO、加密、数据库JDBC、JSON、HTTP客户端等功能。](https://hutool.cn/)
