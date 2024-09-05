@@ -10,9 +10,47 @@
 
 ------
 
-我目前学习后端的主要语言是Java，所以在这里主要介绍一下Java后端的学习路线，当然如果你是其他语言的选手，这并不影响你阅读本章内容，因为业界要解决的问题是不会变的，变的只是框架(比如你在Java中使用Mybatis-plus操作数据，在Go中使用Gorm操作数据，在Java中使用SpringBoot作为基本的Web开发框架，在Go中使用Gin或Echo作为基本的Web开发框架)
+我目前学习后端的主要语言是Java，所以在这里主要介绍一下Java后端的学习路线，当然如果你是其他语言的选手，这并不影响你阅读本章内容，因为业界要解决的问题是不会变的，变的只是框架(比如你在Java中使用Mybatis-plus操作数据，在Go中使用GORM操作数据，在Java中使用SpringBoot作为基本的Web开发框架，在Go中使用Gin或Echo作为基本的Web开发框架)
 
 下面，各位朋友可以根据自己的需求来学习
+
+这里直接总结一下最基础的后端开发需求，适合真正的初学者:
+
+- 会一门后端语言的基础语法 --- 比如Java，Python，Go，Rust等
+- 会基础的关系型数据库操作 --- 一般会MySQL的基础操作就行了
+- 会使用ORM框架来操作数据库 --- 这个ORM框架你可以根据你选的语言去搜
+- 会使用Web开发框架做基本的项目开发 --- 这个Web开发框架你可以根据你选的语言去搜
+- 会基本的接口管理工具给我们的程序发起请求 --- 会使用Postman / Apifox其中一个就行了
+- 会一个依赖管理工具来管理我们的依赖 --- 这个依赖管理工具你可以根据你选的语言去搜
+- 会版本控制工具 --- Git
+
+比如，我这里以Java为例:
+
+- 会Java的基础语法：掌握数据类型、控制结构、面向对象编程等基本概念。
+- 会关系型数据库MySQL的基础操作：能够执行基本的SQL查询、插入、更新和删除操作。
+- 会Mybatis来操作数据库：了解如何使用MyBatis进行数据持久化。
+- 会SpringBoot来做基本的项目开发：能够创建和配置SpringBoot应用，理解基本的注解和配置方式。
+- 会使用Apifox给我们的程序发起请求：能够使用Apifox测试和管理API接口。
+- 会使用Maven来管理我们的依赖：熟悉Maven的基本命令和POM文件配置。
+- 会使用Git提交推送代码到GitHub上：能够使用 Git 进行版本控制，掌握基本的提交、推送和分支操作。
+
+又或者，Go:
+
+- 会Go的基础语法：理解数据类型、控制结构、函数和并发编程等基本概念。
+- 会关系型数据库MySQL的基础操作：能够执行基本的 SQL 查询、插入、更新和删除操作。
+- 会GORM来操作数据库：了解如何使用GORM进行数据持久化。
+- 会Echo / Gin来做基本的项目开发：能够使用 Echo 或 Gin 框架搭建基本的 Web 应用。
+- 会使用Apifox给我们的程序发起请求：能够使用 Apifox 测试和管理 API 接口。
+- 会使用Go Modules来管理我们的依赖：熟悉 Go Modules 的基本用法。
+- 会使用Git提交推送代码到GitHub上：能够使用 Git 进行版本控制，掌握基本的提交、推送和分支操作。
+
+除了这些，建议你了解学习以下内容:
+
+- 如何使用Markdown规范自己的文档
+- 如何规范自己的commit信息
+- 如何遵守接口设计规范 RESTful API
+
+当你有了一定的基础后，你可以根据后面写的这些来查缺补漏，丰富自己的技术栈
 
 ### 语言---Java(必学)
 
@@ -73,7 +111,7 @@
 - [mybatis – MyBatis 3 | 简介](https://mybatis.org/mybatis-3/zh_CN/index.html)
 - [MyBatis-Plus 🚀 为简化开发而生 (baomidou.com)](https://baomidou.com/)
 
-### 开发框架---Spring，SpringMVC，SpringBoot(必学)
+### Web开发框架---Spring，SpringMVC，SpringBoot(必学)
 
 ------
 
@@ -87,7 +125,7 @@
 - [spring 中文文档 - spring 中文网 (springdoc.cn)](https://springdoc.cn/docs/)
 - [Spring 项目 :: Spring 框架 - Spring 中文 (springframework.org.cn)](https://docs.springframework.org.cn/spring-framework/reference/spring-projects.html)
 
-### 接口管理工具---Postman / Apifox / Swagger / YApi
+### 接口管理工具---Postman / Apifox / Swagger / YApi(必学)
 
 ------
 
@@ -202,7 +240,7 @@
 - [Linux命令大全(手册) – 真正好用的Linux命令在线查询网站 (linuxcool.com)](https://www.linuxcool.com/)
 - [清华大学开源软件镜像站 | Tsinghua Open Source Mirror](https://mirrors.tuna.tsinghua.edu.cn/)
 
-### 前端基础---前端三剑客(必学)
+### 前端基础---前端三剑客(选学，这个不做要求，感兴趣可以了解一下)
 
 ------
 
