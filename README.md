@@ -14,7 +14,50 @@
 
 所以作为一名普通的在校大学生，我想在此分享一下自己学习后端的整个心路历程和经验，将整个后端要学习的技术尽量以一种启发式的方式介绍给大家，希望能为所有想学习后端的同学们提供一些帮助。
 
-## 这个仓库有什么？
+## 这个仓库包含了哪些知识的介绍？
+
+- 后端语言 --- Java
+- 关系型数据库 --- MySQL
+- ORM框架 --- Mybatis / Mybatis-plus
+- Web开发框架 --- Spring，SpringMVC，SpringBoot
+- 接口管理工具 --- Postman / Apifox / Swagger / YAp
+- 安全管理框架 --- Spring Security / Shiro
+- 依赖管理工具 --- Maven / Gradle
+- 版本控制工具 --- Git
+- 服务器 --- Linux
+- 前端基础 --- 前端三剑客
+- 设计模式 --- 优化代码
+- 缓存 --- Redis
+- 性能压测 --- JMeter
+- 消息队列 --- RabbitMQ
+- 反向代理服务器 --- Nginx
+- 网络编程 --- Netty
+- 微服务框架 --- SpringCloud
+- 容器 --- Docker
+- 容器编排 --- Kubernetes
+- CI / CD --- Jenkins
+- 并发编程 --- JUC
+- 虚拟机 --- JVM
+- 任务调度 --- XXL-JOB
+- 搜索引擎 --- Elasticsearch
+- 链路追踪 --- SkyWalking
+- 读写分离 --- ShardingSphere / MyCat
+- 同步数据 --- Canal
+- 存储图片 --- OSS
+- 好用的工具包 --- Hutool
+
+个人认为除了四大件和其他CS专业知识的介绍，关于纯后端知识的介绍已经非常全面了。
+
+你可能会觉得还不是很全，比如这里有一些概念笔者并没有提及：CDN内容分发网络，DDD架构，分布式的Raft，拥抱云的GraalVM，新时代GC的ZGC，服务网格Istio等等。
+
+其实当然，后端知识浩如烟海，怎么可能仅仅只用一篇文章介绍完。倒不如说，这些后端知识应该是你在有了一定基础之后自己去看前沿文章去了解到的。
+
+写这篇文章主要是觉得现在市面上的学习路线主要有以下两个极端:
+
+- 太全。让真正的初学者难以下手，不知道学什么，只会盲目的去学习一些新框架
+- 太简单。让初学者不易于建立完整的后端知识体系，对于后端架构没有一个完整的认识
+
+所以这里就我在大学以来和在团队中学习的经验写一些我对于后端的看法，希望可以让朋友们拨开云雾见青天，知道自己为什么学这些技术，以及要学什么技术。
 
 ## 我该怎么学习后端的技术
 
@@ -157,7 +200,7 @@ SpringBoot3相对于SpringBoot2就是功能更多，但是API发生了较大的�
 - [spring 中文文档 - spring 中文网 (springdoc.cn)](https://springdoc.cn/docs/)
 - [Spring 项目 :: Spring 框架 - Spring 中文 (springframework.org.cn)](https://docs.springframework.org.cn/spring-framework/reference/spring-projects.html)
 
-## 依赖管理管理工具---Maven / Gradle(必学)
+## 依赖管理工具---Maven / Gradle(必学)
 
 相信你之前使用依赖的方式是直接将对应的jar包放入项目中，但是随着你项目中使用的依赖越来越多，自己管理依赖逐渐变成了一件麻烦的事情。
 
