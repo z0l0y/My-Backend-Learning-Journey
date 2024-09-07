@@ -552,3 +552,5 @@ Docker主要做的是将你的项目和你项目所需的环境进行封装，�
 - 我们要锻炼自己看文档的能力。就以我为例吧，我之前学习的时候总是去在B站上找视频看，但是后来我发现这样学习的效率实在是太低了，于是开始慢慢尝试去看一些中文文档去学习（上面的ShardingSphere我就是照着文档学习的），你会发现，当你会通过文档学习之后，学习的速度会变的非常快
 - 善于使用搜索平台。Stack Overflow和Github是你的好帮手，前者可以搜问题，后者可以找代码
 - 不要过于依赖别人的回答。有时候，别人的回答效率还不如你自己去解决这个问题的效率高，建议是在自己的程序出现Bug之后，先自己在网上搜，用GPT问，各种Debug的方法尝试了，自己实在是解决不了了再去问，关于问问题的规范可以看看这个[How-To-Ask-Questions-The-Smart-Way](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)
+
+最后的最后，能帮作者点一个[star](https://github.com/z0l0y/My-Backend-Learning-Journey)吗？举手之劳万分感谢。
